@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "credentialSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "type"]
+    },
+    "credentialSubject": {
+      "type": "object",
+      "properties": {
+        "familyName": {
+          "type": "string"
+        },
+        "givenName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "telephone": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "ipAddress": {
+          "type": "string"
+        },
+        "stacks": {
+          "type": "string"
+        },
+        "linkedin": {
+          "type": "string"
+        },
+        "twitter": {
+          "type": "string"
+        },
+        "facebook": {
+          "type": "string"
+        },
+        "instagram": {
+          "type": "string"
+        },
+        "gmail": {
+          "type": "string"
+        },
+        "cid": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "defaultValue": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string",
+          "format": "uri"
+        },
+        "public": {
+          "type": "string"
+        },
+        "private": {
+          "type": "string"
+        },
+        "handleIdentifier": {
+          "type": "string"
+        },
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id", "type"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "type": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "issuer": {
+      "type": "string",
+      "format": "uri"
+    },
+    "identifier": {
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "type": "string"
+    },
+    "issuanceDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "@context", "credentialSchema", "credentialSubject", "id", "type", "issuer", 
+    "identifier", "name", "issuanceDate"
+  ]
+}
